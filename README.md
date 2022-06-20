@@ -12,5 +12,6 @@ This notebook contains the detailed Feture Engineering and Modelling on the give
 This notebook contains the final pipeline, where the we can directly get the Predictions by just giving the inputs to the pipeline, which does all the pre-             processing and predictions by itself.
 
 ###  4. app.py
-The web-app is deployed over flask framework and app.py is the file you need to execute to get the final webpage.
+The web-app is deployed using REST API .
+To view the final output of the code open cmd and type "run app.py" .
 The model is currently deployed on aws and can be tested from the link: http://ec2-34-221-67-120.us-west-2.compute.amazonaws.com.
