@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wikipedia Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1 style=" font-family:dyeline">Wikipedia Web Traffic Forecasting</h1>
+   
+</div>
+ 
+<div class="container-sm container-md container-lg">
+  <div class="row">
+    <div class="col-sm-4">
+     
+     
+    </div>
+    <div style="background-color:lavender" class="col-sm-4">
+      <form action="{{ url_for('predict')}}"method="post">
+  <div class="form-group">
+<label style="font-weight:bold" for="index">Enter Page Index:</label>
+    <input type="text" class="form-control" name="Enter_index" for="index" placeholder="Index_ID" required="required" />
+       
+     
+</div>
+       
+<div class="form-group">
+        <label style="font-weight:bold" for="dates">Enter Date:</label>
+<input type="date" for="dates" class="form-control" name="dates" placeholder="Date" required="required" />
+
+</div>
+<button type="submit" class="btn btn-success btn-block btn-large">Submit</button>
+ </form>
+     
+    </div>
+<div class="col-sm-4"  >
+<p  class="text-muted">&#x2A;Enter index(0-9999), All index has a wikipedia page corresponding to them.</p>
+ <p class="text-muted">&#x2A; Chose a date for which you want to make prediction. Due to data limitation, model support date between 2015-07-06 to 2017-09-10. Date format must be yyyy-mm-dd, for example 2016-06-15.</p>
+</div>
+
+   
+  </div>
+   
+ 
+</div>
+
+</body>
+</html>
