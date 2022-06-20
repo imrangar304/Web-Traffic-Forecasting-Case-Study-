@@ -1,7 +1,15 @@
 # Web-Traffic-Forecasting-Case-Study-
 An end to end Machine Learning Case Study for predicting the number of views a web page can get in the future on the basis of its past viewed history.
 
-# Business Problem
-This is a Kaggle Competition Problem which focuses on time – series analysis. 
-We have a total of 145k time series in our dataset for a total of 803 days ranging from 2015/07/01 to 2017/09/10. In simpler terms we have 145k web pages data for 803 days and our goal is to perform analysis on this data and predict future traffic for next 64 days from 2017/09/13 to 2017/11/13.
+EDA - EDA_WebTrafficForecasting.ipynb:
+This ipynb contains the in-depth EDA for the given dataset. Kindly note that some of the plots might not be visible in the github page (plotly plots), which can be viewed by opening the notebook using nbviewer.
 
+Modelling_WebTrafficForecasting.ipynb
+This notebook contains the detailed Feture Engineering and Modelling on the given dataset.
+
+final_WebTrafficForecasting.ipynb:
+This notebook contains the final pipeline, where the we can directly get the Predictions by just giving the inputs to the pipeline, which does all the pre-processing and predictions by itself.
+
+app.py
+The web-app is deployed over flask framework and app.py is the file you need to execute to get the final webpage.
+The model is currently deployed on aws and can be tested from the link: http://ec2-34-221-67-120.us-west-2.compute.amazonaws.com.
